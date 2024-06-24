@@ -71,8 +71,6 @@ jobs:
   
   publish:
     needs: build
-    runs-on: ${{matrix.os}}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOs-latest]
+    runs-on: ubuntu-latest
+    
     
