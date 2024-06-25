@@ -17,5 +17,16 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        post{
+            always{
+                echo "welcome"
+            }
+            success{
+                echo "everything sent ok"
+            }
+            failure{
+                echo "you failed"
+            }
+        }
     }
 }
