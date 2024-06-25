@@ -17,7 +17,9 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        post {
+        
+    }
+    post {
             always {
                 echo "welcome"
             }
@@ -28,5 +30,4 @@ pipeline {
                 echo "you failed"
             }
         }
-    }
 }
