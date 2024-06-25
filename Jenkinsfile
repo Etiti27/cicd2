@@ -17,14 +17,14 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        post{
-            always{
+        post {
+            always {
                 echo "welcome"
             }
-            success{
+            success {
                 echo "everything sent ok"
             }
-            failure{
+            failure {
                 echo "you failed"
             }
         }
