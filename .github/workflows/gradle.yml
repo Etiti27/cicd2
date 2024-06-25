@@ -41,7 +41,7 @@ jobs:
         with:
           image: obinna27/docker-repository
           registry: docker.io
-          dockerfile: ./Dockerfile
+          dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
