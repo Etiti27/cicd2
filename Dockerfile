@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM java:7
+FROM openjdk:8
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN javac Main.java
